@@ -1,0 +1,67 @@
+{
+  "chosen": {
+    "ridge": {
+      "params": {
+        "model__alpha": 100.0
+      },
+      "cv_mae": 493.3779103630386,
+      "seconds": 0.3
+    },
+    "random_forest": {
+      "params": {
+        "max_features": 0.33,
+        "min_samples_leaf": 1
+      },
+      "cv_mae": 446.75536833536836,
+      "seconds": 36.8
+    },
+    "hist_gradient_boosting": {
+      "params": {
+        "learning_rate": 0.05,
+        "max_iter": 600,
+        "max_leaf_nodes": 31
+      },
+      "cv_mae": 398.374381065861,
+      "seconds": 128.0
+    }
+  },
+  "validation": {
+    "baseline_yesterday": {
+      "mae": 751.2353142076503,
+      "rmse": 1029.2373910457168,
+      "mape": 4.685126304945487,
+      "n": 8784
+    },
+    "baseline_last_week": {
+      "mae": 1228.751252276867,
+      "rmse": 1705.7098343646464,
+      "mape": 7.531363081836602,
+      "n": 8784
+    },
+    "baseline_hybrid": {
+      "mae": 848.6861338797814,
+      "rmse": 1241.6167627133664,
+      "mape": 5.274041419900735,
+      "n": 8784
+    },
+    "ridge": {
+      "mae": 522.0594530497565,
+      "rmse": 665.4657441246139,
+      "mape": 3.2346773361310963,
+      "n": 8784
+    },
+    "random_forest": {
+      "mae": 466.26615285367336,
+      "rmse": 612.3501214411714,
+      "mape": 2.830989683755867,
+      "n": 8784
+    },
+    "hist_gradient_boosting": {
+      "mae": 435.489358285857,
+      "rmse": 560.4968162419135,
+      "mape": 2.6644448443530107,
+      "n": 8784
+    }
+  },
+  "best_model_on_validation": "hist_gradient_boosting"
+}
